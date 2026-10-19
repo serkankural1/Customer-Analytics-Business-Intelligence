@@ -141,17 +141,46 @@ customer_analytics/
     └── CSV datasets
 ```
 
-## 9. Dashboard & Report
+## Dashboard Preview
 
-The Power BI report consists of five pages, combining executive performance monitoring with customer, product, pricing, and competitive analysis.
+The Power BI dashboard consists of five analytical pages, providing an integrated view of restaurant business performance, customer behavior, pricing, and competitive positioning.
 
-The exported PDF report is available in:
+### 1. Executive Overview
 
-`dashboard/costumer_analytics.pdf`
+A consolidated view of revenue, order performance, business targets, sales channels, and product categories.
 
-The Power BI project file is available in:
+![Executive Overview](screenshots/1_Executive%20Overview.png)
 
-`dashboard/customer_analysis.pbix`
+### 2. Product & Category Analysis
+
+Analysis of product demand, category performance, sales trends, and pricing relative to inflation benchmarks.
+
+![Product and Category Analysis](screenshots/2_Product%26Category.png)
+
+### 3. Customer Analysis
+
+Customer activity, acquisition, retention, purchasing frequency, and geographic distribution.
+
+![Customer Analysis](screenshots/3_Customer%20Analysis.png)
+
+### 4. Customer Segmentation
+
+RFM-based customer segmentation, revenue contribution, customer value, and geographic distribution.
+
+![Customer Segmentation](screenshots/4_Customer%20Segmentation.png)
+
+### 5. Competitive Intelligence
+
+Competitor ratings, customer experience metrics, product satisfaction, and rating momentum.
+
+![Competitive Intelligence](screenshots/5_Competitive%20Intelligence.png)
+
+## Full Report & Power BI Project
+
+For a detailed view of the analysis, explore the complete report or download the Power BI project.
+
+- **[View Full Analytics Report (PDF)](dashboard/costumer_analytics.pdf)**
+- **[Download Power BI Project (.pbix)](dashboard/customer_analysis.pbix)**
 
 ## 10. Data & Limitations
 
