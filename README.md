@@ -1,92 +1,168 @@
-\# Customer Analytics \& Business Intelligence
+# Customer Analytics | Business Intelligence & Strategic Insights
 
+**An End-to-End Restaurant Analytics Portfolio Project**
 
+**Tech Stack:** PostgreSQL · SQL · Power BI · DAX · Data Modeling · RFM Analysis
 
-\### End-to-End Restaurant Analytics | PostgreSQL · Power BI · DAX · SQL
+## 1. Project Overview
 
+This project demonstrates an end-to-end business intelligence workflow designed to support data-driven decision-making in the restaurant industry.
 
+Using PostgreSQL for data preparation and analytical modeling, and Power BI for visualization and performance monitoring, the project examines five interconnected business areas:
 
-\## Project Overview
+- Executive and sales performance
+- Product and category performance
+- Customer behavior and retention
+- RFM-based customer segmentation
+- Pricing and competitive intelligence
 
+The primary objective is to move beyond descriptive dashboards and translate analytical findings into practical business recommendations.
 
+**Analysis Period:** January–December 2025
 
-This project analyzes restaurant business performance through an integrated business intelligence framework, covering sales performance, product categories, customer behavior, RFM segmentation, pricing strategy, and competitive intelligence.
+## 2. Business Problem
 
+Restaurant operators must manage multiple challenges simultaneously: revenue growth, customer retention, product profitability, pricing decisions, sales channel performance, and competitive positioning.
 
+Without an integrated analytical framework, these decisions can become fragmented.
 
-The objective is to transform operational data into actionable insights that support customer retention, pricing decisions, channel optimization, and competitive positioning.
+This project addresses the central business question:
 
+**How can a restaurant use operational, customer, pricing, and competitor data to improve commercial performance and make more informed strategic decisions?**
 
+## 3. Executive Performance Snapshot
 
-\## Business Objectives
+| Key Performance Indicator | Result |
+|---|---:|
+| Total Revenue | ₺15.82M |
+| Completed Orders | 31,191 |
+| Unique Customers | 4,932 |
+| December Active Customers | 1,874 |
+| December Revenue Growth (MoM) | +9.1% |
+| December Order Growth (MoM) | +7.5% |
+| December Active Customer Growth (MoM) | +5.3% |
 
+*Annual totals and latest-month performance indicators are presented separately to maintain a consistent interpretation of reporting periods.*
 
+## 4. Analytical Framework
 
-\- Evaluate revenue, order volume, and sales channel performance.
+### Executive Overview
 
-\- Understand customer acquisition, retention, and purchasing behavior.
+Evaluates overall commercial performance through revenue, orders, business targets, sales platforms, and product categories.
 
-\- Segment customers using Recency, Frequency, and Monetary (RFM) analysis.
+**Business decision:** Identify growth drivers and prioritize commercial improvement opportunities.
 
-\- Compare product pricing trends with CPI-based inflation benchmarks.
+### Product & Category Analysis
 
-\- Assess competitive performance using product ratings and customer experience indicators.
+Examines category revenue contribution, product demand, order volume, and product pricing relative to an inflation-adjusted benchmark.
 
+**Business decision:** Support product portfolio optimization and evidence-based pricing reviews.
 
+### Customer Analysis
 
-\## Technology Stack
+Investigates active customers, new and returning customers, purchase frequency, revenue per customer, and geographic distribution.
 
+**Business decision:** Improve customer engagement and retention strategies.
 
+### Customer Segmentation
 
-\- \*\*PostgreSQL:\*\* Data storage, transformation, analytical queries, and SQL views.
+Applies Recency, Frequency, and Monetary (RFM) analysis to classify customers into behavioral segments, including Champions, Loyal Customers, At Risk, Potential Loyalists, and Hibernating Customers.
 
-\- \*\*Power BI:\*\* Data modeling, interactive dashboards, and visual analytics.
+**Business decision:** Develop differentiated customer engagement, loyalty, and reactivation strategies.
 
-\- \*\*DAX:\*\* Business metrics, time intelligence, and customer segmentation calculations.
+### Competitive Intelligence
 
-\- \*\*SQL:\*\* Data preparation, aggregation, and pricing analysis.
+Compares competitor ratings, product satisfaction, rating momentum, and customer experience indicators.
 
+**Business decision:** Identify competitive strengths, service gaps, and opportunities for differentiation.
 
+## 5. Selected Analytical Findings
 
-\## Dashboard Structure
+### Customer Value Concentration
 
+The Champions segment contributes approximately **₺8.47M**, representing around **53.6% of total revenue**.
 
+This highlights the importance of high-value customer relationships and the potential commercial impact of customer retention.
 
-1\. \*\*Executive Overview\*\* — Revenue, orders, KPIs, and platform performance.
+### Pricing vs. Inflation
 
-2\. \*\*Product \& Category Analysis\*\* — Product performance, category trends, and pricing versus inflation.
+For a consistently tracked set of 44 products, the average listed product price reached **₺225.34** by December, compared with an inflation-adjusted benchmark of **₺221.36**.
 
-3\. \*\*Customer Analysis\*\* — Customer activity, retention, and purchase behavior.
+The difference indicates that year-end average listed prices were approximately **1.8% above the CPI-adjusted benchmark**.
 
-4\. \*\*Customer Segmentation\*\* — RFM segmentation, customer value, and geographic distribution.
+This is a pricing comparison, not a direct measure of profitability or realized selling prices.
 
-5\. \*\*Competitive Intelligence\*\* — Competitor ratings, product satisfaction, and experience benchmarking.
+### Competitive Positioning
 
+The restaurant's overall customer experience score is **4.35**, compared with **4.45** for Competitor B.
 
+However, its taste score of **4.47** exceeds Competitor B's **4.21**, suggesting a potential product-quality advantage alongside opportunities to improve other elements of the customer experience.
 
-\## Project Files
+## 6. Strategic Recommendations
 
+| Priority | Recommendation | Business Rationale |
+|---|---|---|
+| High | Develop retention programs for high-value customers | Protect revenue associated with the Champions segment |
+| High | Establish targeted reactivation campaigns | Address potential revenue loss among At Risk and Hibernating customers |
+| Medium | Review product pricing against inflation and demand | Support consistent, evidence-based pricing decisions |
+| Medium | Investigate customer experience gaps | Strengthen competitive positioning beyond product taste |
+| Medium | Monitor platform performance and commission exposure | Improve visibility into channel-level commercial efficiency |
 
+These recommendations are analytical proposals. Their financial impact would require further validation through operational data, cost analysis, or controlled testing.
 
-\- `dashboard/` — Power BI report and PDF export.
+## 7. Technical Implementation
 
-\- `sql/` — SQL scripts used in the analytical workflow.
+**PostgreSQL and SQL**
 
-\- `screenshots/` — Supporting screenshots and visual documentation.
+- Relational data preparation and analytical queries
+- Sales and customer performance calculations
+- Time-based comparisons
+- Product price history and inflation benchmark analysis
 
+**Power BI and DAX**
 
+- Data modeling and relationship management
+- KPI calculations and time intelligence
+- Customer behavior and RFM analysis
+- Interactive business intelligence reporting
+- Competitive benchmarking visualizations
 
-\## Data Disclaimer
+## 8. Repository Structure
 
+```text
+customer_analytics/
+├── README.md
+├── dashboard/
+│   ├── customer_analysis.pbix
+│   └── costumer_analytics.pdf
+├── screenshots/
+│   └── SQL analysis scripts
+└── sql/
+    └── CSV datasets
+```
 
+## 9. Dashboard & Report
 
-This project is intended for analytical demonstration and portfolio purposes. Any synthetic or simulated data used in the project should not be interpreted as actual business performance.
+The Power BI report consists of five pages, combining executive performance monitoring with customer, product, pricing, and competitive analysis.
 
+The exported PDF report is available in:
 
+`dashboard/costumer_analytics.pdf`
 
-\## Project Outcome
+The Power BI project file is available in:
 
+`dashboard/customer_analysis.pbix`
 
+## 10. Data & Limitations
 
-The project demonstrates how SQL-based data preparation, Power BI modeling, and business-oriented analysis can be combined to support evidence-based decisions.
+This portfolio project uses simulated business data for analytical demonstration. Findings illustrate analytical methods and potential business decisions rather than verified outcomes from a real restaurant operation.
 
+The pricing benchmark uses general consumer price inflation and average listed product prices. It does not directly account for ingredient costs, product mix, discounts, or profit margins.
+
+Competitive ratings and customer segmentation results should be interpreted within the scope of the underlying demonstration dataset.
+
+## 11. Project Outcome
+
+This project demonstrates the ability to connect data engineering, analytical modeling, business intelligence, and strategic interpretation within a single workflow.
+
+The central deliverable is not only an interactive dashboard, but also an analytical foundation for identifying business problems, evaluating evidence, and proposing measurable actions.
