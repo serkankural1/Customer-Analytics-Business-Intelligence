@@ -1,0 +1,19 @@
+# Temporary files
+*.tmp
+*.bak
+*.log
+~$*
+
+# Python
+__pycache__/
+.venv/
+.env
+
+# Credentials
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Power BI temporary files
+*.pbit.tmp
